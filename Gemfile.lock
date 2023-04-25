@@ -9,6 +9,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    Ascii85 (1.1.0)
     actioncable (7.0.4.3)
       actionpack (= 7.0.4.3)
       activesupport (= 7.0.4.3)
@@ -76,6 +77,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
+    afm (0.2.2)
     autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
     bindex (0.8.1)
@@ -115,6 +117,7 @@ GEM
       sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    hashery (2.1.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
@@ -157,6 +160,12 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
+    pdf-reader (2.11.0)
+      Ascii85 (~> 1.0)
+      afm (~> 0.2.1)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
     pg (1.4.6)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -197,6 +206,7 @@ GEM
     reline (0.3.3)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby-rc4 (0.1.5)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     rubyzip (2.3.2)
@@ -225,6 +235,7 @@ GEM
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
+    ttfunk (1.7.0)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -262,6 +273,7 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   jbuilder
   jsbundling-rails
+  pdf-reader (~> 2.11)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)

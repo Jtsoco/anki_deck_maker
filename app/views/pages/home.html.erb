@@ -1,3 +1,9 @@
 <div class="container d-flex align-items-center justify-content-center flex-column">
   <h1>Anki Deck Maker</h1>
+  <div>
+    <%= form_tag book_upload_path, multipart: true do %>
+      <%= file_field_tag :pdf_file %>
+      <%= submit_tag "Upload" %>
+    </div>
+  <% end %>
 </div>
