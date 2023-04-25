@@ -21,6 +21,7 @@ class BooksController < ApplicationController
   end
 
   def read_pdf_pages(reader)
+    # Refactor this to eliminate common words here, so that common words are eliminated in smaller chunks than one massive memory hogging file
     full_text = ""
     reader.pages.each do |page|
       full_text += (" " + page.text)
